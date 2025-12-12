@@ -3,81 +3,304 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chatgpt-Generated Example. 과외 | (이름) — 수학/논술</title>
-  <meta name="description" content="(대상) (과목) 과외. 수업 방식/커리큘럼/상담 신청 안내." />
+  <title>주하늘 | 과외 강사 / 수리논술 전문</title>
+  <meta name="description" content="주하늘 과외 강사 / 수리논술 전문. 수업 철학, 수업 정보, 수업 가능 시간대 안내." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="container hero">
-    <div class="badge">1:1 맞춤 / 온라인·대면</div>
-    <h1>(이름) 과외 — (과목) / (대상)</h1>
-    <p class="lead">
-      (한 줄 소개) 예: 개념 → 유형 → 서술형까지, 오답·피드백 루틴으로 성적을 끌어올립니다.
-    </p>
+    <section class="topcard" aria-label="프로필 명함">
+      <div class="identity">
+        <h1 class="name">주 하 늘</h1>
+        <p class="role">과외 강사 / 수리논술 전문</p>
 
-    <div class="cta">
-      <a class="btn primary" href="#apply">상담 신청</a>
-      <a class="btn" href="#curriculum">커리큘럼 보기</a>
-    </div>
+        <p class="profile-meta">
+          23세 · 서울과학고등학교 졸업 · 고려대학교(서울캠퍼스) 수학과 졸업
+          <span class="meta-sub">(평균평점 4.48/4.5)</span>
+        </p>
 
-    <p class="sub">
-      지역: (대면 지역) / 시간: (가능 시간대) / 연락: 아래 폼 또는 카카오톡
-    </p>
+        <div class="contact" aria-label="연락처">
+          <a class="chip" href="mailto:sshs29hanul@naver.com" title="이메일">
+            <span class="icon" aria-hidden="true">
+              <!-- envelope -->
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M5.5 7.5 12 12l6.5-4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="chip-text">sshs29hanul@naver.com</span>
+          </a>
+
+          <a class="chip"
+             href="https://www.youtube.com/@%EC%A3%BC%ED%95%98%EB%8A%98-v4u"
+             target="_blank" rel="noopener"
+             title="유튜브">
+            <span class="icon" aria-hidden="true">
+              <!-- youtube -->
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M21 12c0 2.2-.2 3.6-.4 4.4a3 3 0 0 1-2.1 2.1c-1 .3-3 .5-6.5.5s-5.5-.2-6.5-.5a3 3 0 0 1-2.1-2.1C3.2 15.6 3 14.2 3 12s.2-3.6.4-4.4A3 3 0 0 1 5.5 5.5C6.5 5.2 8.5 5 12 5s5.5.2 6.5.5a3 3 0 0 1 2.1 2.1c.2.8.4 2.2.4 4.4Z"
+                      stroke="currentColor" stroke-width="1.8"/>
+                <path d="M10.5 9.5v5l5-2.5-5-2.5Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="chip-text">YouTube @마늘수학</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 증명사진은 나중에 넣을 수 있도록 '자리'만 만들어 둠 -->
+      <!-- 사진 넣을 때: 아래 div를 img로 바꾸면 됨
+           <img class="avatar-img" src="assets/images/profile.jpg" alt="주하늘 증명사진" />
+      -->
+      <div class="avatar" role="img" aria-label="증명사진 자리">
+        <div class="avatar-inner">
+          <div class="avatar-title">증명사진</div>
+          <div class="avatar-sub">assets/images/profile.jpg</div>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main class="container">
-    <section class="card" id="about">
-      <h2>수업 특징</h2>
-      <ul class="grid">
-        <li><strong>진단</strong><br/>첫 상담에서 현재 수준·목표·학습 습관을 점검</li>
-        <li><strong>루틴</strong><br/>개념 정리 → 숙제 → 오답 → 피드백 사이클 고정</li>
-        <li><strong>관리</strong><br/>과제량/시간표/취약 단원 추적 (필요 시 주간 리포트)</li>
-      </ul>
+    <section class="card" id="philosophy">
+      <h2>추구하는 교육</h2>
+
+      <div class="accordion" aria-label="추구하는 교육(펼치기)">
+        <details class="acc-item">
+          <summary class="acc-title">수학의 단위 개념, 풀이 단계</summary>
+          <div class="acc-body">
+            <p>
+              수학은 암기 과목들과 달리 시험 범위를 단위 개념으로 분할하기 어렵다는 특징을 갖습니다.
+              영어의 단위 개념은 낱개 단어들과 문법 규칙이고, 역사의 단위 개념은 육하원칙에 따라 기술되는 역사적 사실입니다.
+              개념서에는 모든 단위 개념이 담겨 있고, 시험 문제도 단위 개념의 조합으로 풀리니 이들은 “암기 과목”으로 불립니다.
+            </p>
+            <p>
+              하지만 수학 개념서의 정의/공식만을 단위 개념이라 부르기엔 부족합니다.
+              유형 문제집의 개념 활용 예제를 수없이 풀고 나서야 시험 문제에 접근할 수 있는데,
+              그 이유는 수학의 단위 개념이 다름 아닌 <strong>풀이 단계(개별 논리적 테크닉)</strong>이기 때문입니다.
+              시험 문제는 풀이 단계들을 유연하게 조합하여 해결됩니다.
+            </p>
+          </div>
+        </details>
+
+        <details class="acc-item">
+          <summary class="acc-title">학생과 강사의 역할</summary>
+          <div class="acc-body">
+            <p>
+              학생의 역할은 설명을 따라 문제풀이 연습을 통해 풀이 단계들을 체득하는 것입니다.
+              동일한 논리를 기반으로 한 풀이 단계라도 문제 상황에 따라 적용이 변모할 수 있고,
+              어려운 문제는 요구하는 풀이 단계를 숨기기 때문에 해결자 스스로 발견/적용해야 합니다.
+            </p>
+            <p>
+              강사는 학생의 체득을 보조하는 것을 넘어, 시험 범위에서 필요한 풀이 단계의 집합을 추출해
+              학생에게 <strong>빈틈없고 효율적으로 전달</strong>해야 합니다.
+              (시험범위가 있는 수학이라면, 아이디어와 머리싸움의 영역도 유형의 형태로 끌어내릴 수 있다고 믿습니다.)
+            </p>
+          </div>
+        </details>
+
+        <details class="acc-item">
+          <summary class="acc-title">논술 과외 강의 포인트</summary>
+          <div class="acc-body">
+            <p>
+              커리큘럼은 단원별·테크닉(풀이 단계)별로 구성됩니다.
+              주요 대학 논술 기출을 통해 연습하고, 학생이 막힌 지점에서 어떤 풀이 단계를 따라가지 못했는지
+              사고 과정을 확인하여 보완 문제(기출/필요 시 맞춤 자작)를 제공합니다.
+            </p>
+            <p>
+              개념서 수준의 기초 개념은 기본기로서 필요 시 설명하되, 이후엔 문제풀이로 스스로 학습하게끔 합니다.
+              또한 학생의 서술을 항상 확인하여 실전 답안처럼 서술·채점·첨삭합니다.
+            </p>
+          </div>
+        </details>
+      </div>
     </section>
 
-    <section class="card" id="curriculum">
-      <h2>커리큘럼 예시</h2>
-      <div class="two">
-        <div>
-          <h3>4주 플랜</h3>
-          <ol>
-            <li>레벨 진단 + 핵심 개념 재정비</li>
-            <li>빈출 유형 훈련 + 오답 템플릿</li>
-            <li>서술형/응용 강화</li>
-            <li>실전 모의 + 약점 보완</li>
-          </ol>
+    <section class="card" id="info">
+      <h2>수업 정보</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-k">기준 수업료</div>
+          <div class="info-v">대입 수리논술 : 시급 x만 원</div>
         </div>
-        <div>
-          <h3>수업 방식</h3>
-          <ul>
-            <li>수업 전: 과제/질문 수집</li>
-            <li>수업 중: 풀이 구조화 + 즉석 변형</li>
-            <li>수업 후: 오답 정리/추가 과제 안내</li>
-          </ul>
+        <div class="info-item">
+          <div class="info-k">수업 방식</div>
+          <div class="info-v">그룹과외, 화상과외 가능<br>인당 수업료 혜택 - 협의</div>
+        </div>
+        <div class="info-item">
+          <div class="info-k">지역</div>
+          <div class="info-v">현 거주지 서울 강동구<br>대중교통 1시간 이내 - 협의</div>
+        </div>
+        <div class="info-item">
+          <div class="info-k">기타 과외 가능 과목</div>
+          <div class="info-v">수학(고입/고등내신/수능) - 협의</div>
+        </div>
+        <div class="info-item">
+          <div class="info-k">메시지 질의응답</div>
+          <div class="info-v">수업 시간 외 자율 질의응답 운영</div>
+        </div>
+        <div class="info-item">
+          <div class="info-k">문의</div>
+          <div class="info-v">문의 메일 주소(페이지 상단)</div>
         </div>
       </div>
     </section>
 
-    <section class="card" id="faq">
-      <h2>자주 묻는 질문</h2>
-      <details><summary>수업료는 어떻게 되나요?</summary><p>학생 수준/횟수/시간에 따라 달라 상담 후 안내합니다.</p></details>
-      <details><summary>온라인도 가능한가요?</summary><p>가능합니다. (줌/디스코드/태블릿 필기 등)</p></details>
-      <details><summary>숙제량이 많은가요?</summary><p>학생 상황에 맞춰 조절합니다. “꾸준히 할 수 있는 양”이 원칙입니다.</p></details>
-    </section>
-
-    <section class="card" id="apply">
-      <h2>상담 신청</h2>
-      <p>아래에 연락 수단을 연결해두면 끝이에요.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://forms.gle/여기에구글폼링크">구글폼으로 신청</a>
-        <a class="btn" href="https://open.kakao.com/o/여기에오픈채팅">카카오톡 문의</a>
+    <section class="card" id="availability">
+      <div class="card-head">
+        <h2>수업 가능 시간대 현황</h2>
+        <div class="legend" aria-label="표 범례">
+          <span class="pill ok">가능</span>
+          <span class="pill no">불가</span>
+        </div>
       </div>
-      <p class="tiny">※ 링크는 나중에 네 링크로 교체하면 됩니다.</p>
+
+      <div class="table-wrap" role="region" aria-label="시간표(가로 스크롤 가능)" tabindex="0">
+        <table class="schedule" aria-label="수업 가능 시간표">
+          <thead>
+            <tr>
+              <th scope="col" class="time-col">시간</th>
+              <th scope="col">일</th>
+              <th scope="col">월</th>
+              <th scope="col">화</th>
+              <th scope="col">수</th>
+              <th scope="col">목</th>
+              <th scope="col">금</th>
+              <th scope="col">토</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- 10:00 ~ 22:00, 30분 단위 (24행)
+                 정각 시작 행의 왼쪽(th.time-col)에 data-hour="10" 같은 속성을 달면
+                 '행과 행 사이 선' 위치(정각)에 10,11,...이 표시되도록 CSS가 처리합니다.
+            -->
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="10"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="11"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="12"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="13"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="14"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="15"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="16"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="17"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="18"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="19"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="20"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="time-col hour" data-hour="21"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="time-col"></th>
+              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
+            </tr>
+
+            <!-- 22시 라벨(마지막 경계선) -->
+            <tr class="hour-end">
+              <th scope="row" class="time-col hour end" data-hour="22"></th>
+              <td colspan="7" class="end-fill"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="hint">
+        표는 예시입니다. 칸에 <code>ok</code> 또는 <code>no</code> 클래스를 붙이면 색이 반영됩니다.
+      </p>
     </section>
   </main>
 
   <footer class="container footer">
-    <p>© <span id="y"></span> (이름). All rights reserved.</p>
+    <p>© <span id="y"></span> 주하늘</p>
   </footer>
 
   <script>
