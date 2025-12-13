@@ -327,10 +327,6 @@ code{
   height:100%;
 }
 
-.video-link{
-  padding:0.75rem 0.875rem;
-}
-
 /* ===== Info grid ===== */
 .info-grid{
   display:grid;
