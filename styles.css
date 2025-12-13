@@ -479,24 +479,6 @@ code{
 
 /* ===== Responsive ===== */
 @media (max-width:45rem){
-  .topcard{
-    flex-wrap: nowrap;        /* ✅ avatar가 아래로 내려가지 않게 */
-    align-items: flex-start;  /* ✅ 위쪽 정렬 */
-    gap: 0.875rem;
-  }
-
-  .identity{
-    flex: 1 1 auto;           /* ✅ 왼쪽 내용이 공간을 유연하게 사용 */
-    min-width: 0;             /* ✅ 말줄임/줄바꿈 정상화 */
-  }
-
-  .avatar{
-    width: 2rem;              /* ✅ 사진 더 작게 */
-    height: 1.5rem;
-    margin-left: 0;           /* (혹시 auto 때문에 이상하면) */
-    flex: 0 0 auto;
-  }
-
-  /* 사진 자리 글자가 높이를 키우면 숨기기(선택) */
-  .avatar-sub{ display:none; }
+  .topcard{ flex-direction: column; }
+  .avatar{ order: -1; }  /* 사진을 맨 위로 */
 }
