@@ -478,19 +478,25 @@ code{
 }
 
 /* ===== Responsive ===== */
-@media (max-width:45rem){ /* 720px */
-  .hero{ padding-top:2.75rem; } /* 44px */
-  .name{ font-size:2.25rem; }   /* 36px */
-
-  .avatar{ width:7.25rem; height:9.25rem; }
-  .avatar-img{ width:7.25rem; height:9.25rem; }
-
-  .chip-text{ max-width:15rem; }
-
-  .meta-sub{
-    display:block;
-    margin-left:0;
-    margin-top:0.125rem;
+@media (max-width:45rem){
+  .topcard{
+    flex-wrap: nowrap;        /* ✅ avatar가 아래로 내려가지 않게 */
+    align-items: flex-start;  /* ✅ 위쪽 정렬 */
+    gap: 0.875rem;
   }
-}
 
+  .identity{
+    flex: 1 1 auto;           /* ✅ 왼쪽 내용이 공간을 유연하게 사용 */
+    min-width: 0;             /* ✅ 말줄임/줄바꿈 정상화 */
+  }
+
+  .avatar{
+    width: 6rem;              /* ✅ 사진 더 작게 */
+    height: 7.5rem;
+    margin-left: 0;           /* (혹시 auto 때문에 이상하면) */
+    flex: 0 0 auto;
+  }
+
+  /* 사진 자리 글자가 높이를 키우면 숨기기(선택) */
+  .avatar-sub{ display:none; }
+}
