@@ -480,5 +480,9 @@ code{
 /* ===== Responsive ===== */
 @media (max-width:45rem){
   .topcard{ flex-direction: column; }
-  .avatar{ order: -1; }  /* 사진을 맨 위로 */
+  .avatar{
+    order: -1; /* 사진을 맨 위로 */
+    margin-left: 0;
+    align-self: flex-start;
+  }
 }
