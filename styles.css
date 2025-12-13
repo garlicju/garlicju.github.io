@@ -491,8 +491,8 @@ code{
   }
 
   .avatar{
-    width: 6rem;              /* ✅ 사진 더 작게 */
-    height: 7.5rem;
+    width: 2rem;              /* ✅ 사진 더 작게 */
+    height: 1.5rem;
     margin-left: 0;           /* (혹시 auto 때문에 이상하면) */
     flex: 0 0 auto;
   }
