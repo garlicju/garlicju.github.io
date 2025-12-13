@@ -7,6 +7,7 @@
   <meta name="description" content="주하늘 과외 강사 / 수리논술 전문. 수업 철학, 수업 정보, 수업 가능 시간대 안내." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="container hero">
     <section class="topcard" aria-label="프로필 명함">
@@ -22,7 +23,6 @@
         <div class="contact" aria-label="연락처">
           <a class="chip" href="mailto:sshs29hanul@naver.com" title="이메일">
             <span class="icon" aria-hidden="true">
-              <!-- envelope -->
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
                 <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z" stroke="currentColor" stroke-width="1.8"/>
                 <path d="M5.5 7.5 12 12l6.5-4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -36,7 +36,6 @@
              target="_blank" rel="noopener"
              title="유튜브">
             <span class="icon" aria-hidden="true">
-              <!-- youtube -->
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
                 <path d="M21 12c0 2.2-.2 3.6-.4 4.4a3 3 0 0 1-2.1 2.1c-1 .3-3 .5-6.5.5s-5.5-.2-6.5-.5a3 3 0 0 1-2.1-2.1C3.2 15.6 3 14.2 3 12s.2-3.6.4-4.4A3 3 0 0 1 5.5 5.5C6.5 5.2 8.5 5 12 5s5.5.2 6.5.5a3 3 0 0 1 2.1 2.1c.2.8.4 2.2.4 4.4Z"
                       stroke="currentColor" stroke-width="1.8"/>
@@ -62,58 +61,104 @@
   </header>
 
   <main class="container">
-    <section class="card" id="philosophy">
-      <h2>추구하는 교육</h2>
+    <section class="card" id="plan">
+      <h2>강의 특징 및 계획</h2>
 
-      <div class="accordion" aria-label="추구하는 교육(펼치기)">
-        <details class="acc-item">
-          <summary class="acc-title">수학의 단위 개념, 풀이 단계</summary>
+      <div class="accordion" aria-label="강의 특징 및 계획(펼치기)">
+        <details class="acc-item" open>
+          <summary class="acc-title">1) 테크닉 단위의 강의</summary>
           <div class="acc-body">
             <p>
-              수학은 암기 과목들과 달리 시험 범위를 단위 개념으로 분할하기 어렵다는 특징을 갖습니다.
-              영어의 단위 개념은 낱개 단어들과 문법 규칙이고, 역사의 단위 개념은 육하원칙에 따라 기술되는 역사적 사실입니다.
-              개념서에는 모든 단위 개념이 담겨 있고, 시험 문제도 단위 개념의 조합으로 풀리니 이들은 “암기 과목”으로 불립니다.
+              저는 지금까지 연세대/고려대 자연계 논술 기출 약 40회 분량을 개인 DB에 적재해 두었고,
+              각 문제에 사용된 <strong>테크닉(풀이 단계)</strong>들을 문제와 연결하여 테크닉 집합을 형성해 왔습니다.
+              앞으로 타교 논술 기출도 추가로 적재해, 데이터와 자료를 계속 보강할 계획입니다.
             </p>
             <p>
-              하지만 수학 개념서의 정의/공식만을 단위 개념이라 부르기엔 부족합니다.
-              유형 문제집의 개념 활용 예제를 수없이 풀고 나서야 시험 문제에 접근할 수 있는데,
-              그 이유는 수학의 단위 개념이 다름 아닌 <strong>풀이 단계(개별 논리적 테크닉)</strong>이기 때문입니다.
-              시험 문제는 풀이 단계들을 유연하게 조합하여 해결됩니다.
+              수업은 기본적으로 단원 흐름(미적분/기하/확통 등)에 따라 진행하되,
+              각 단원에서 중요한 테크닉들을 뽑아 <strong>테크닉별로 집중 연습할 수 있는 문제</strong>를 선별해 제공합니다.
+              (단순히 “문제 많이 풀기”가 아니라, 어떤 테크닉을 왜 쓰는지 분명하게 만들고 반복 훈련하는 방식입니다.)
             </p>
+
+            <ul>
+              <li>단원별 핵심 테크닉 정리 → 테크닉별 연습 문제 → 기출 적용 순으로 구성</li>
+              <li>학생이 막힌 지점은 “어떤 테크닉이 비어 있는지”로 진단하여 보강</li>
+              <li>필요 시 기출 변형/유사 문제로 해당 테크닉만 따로 클리닉</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- ✅ 1번과 2번 사이에 유튜브 영상 삽입 -->
+        <div class="video-card" aria-label="주제특강 영상">
+          <div class="video-head">
+            <div class="video-title">주제특강 예시: 국소 개선으로 최대/최소 유형 공략</div>
+            <div class="video-sub">제가 직접 만든 영상입니다. 수업 방향을 가볍게 확인하실 수 있어요.</div>
+          </div>
+
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/vHlv_EWxO3o"
+              title="국소 개선을 통해 수리논술 최대/최소 문제들을 해결하는 주제특강"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="video-link">
+            <a class="chip" href="https://youtu.be/vHlv_EWxO3o" target="_blank" rel="noopener">
+              영상 새 창으로 열기
+            </a>
+          </div>
+        </div>
+
+        <details class="acc-item">
+          <summary class="acc-title">2) 서술 집중 첨삭 (실전 기준으로 깐깐하게)</summary>
+          <div class="acc-body">
+            <p>
+              논술 수업에서는 “풀이를 설명하고 끝”이 아니라,
+              학생이 작성한 <strong>서술을 실제 시험 답안처럼</strong> 보고 평가하고 첨삭합니다.
+              문장/논리/표현/정당화가 부족한 부분을 잡아내고, 점수가 나오게끔 고쳐 나갑니다.
+            </p>
+            <p>
+              반대로 논술 대비와 직접 연결되지 않는 기본기(개념서에 있을 법한 기초 내용) 설명은 최소화하고,
+              가능한 한 학생이 미리 공부해 오도록 유도합니다.
+              기본기와 열정을 갖춘 학생일수록, 첨삭을 통해 빠르게 성장할 수 있는 여지가 큽니다.
+            </p>
+
+            <ul>
+              <li>정의–근거–결론 구조로 답안을 정리하는 습관</li>
+              <li>감점 포인트(논리 점프/기호 남용/근거 부족)를 반복적으로 교정</li>
+              <li>필요 시 “모범 서술 템플릿”을 제공하고 학생 답안에 적용</li>
+            </ul>
           </div>
         </details>
 
         <details class="acc-item">
-          <summary class="acc-title">학생과 강사의 역할</summary>
+          <summary class="acc-title">3) 학생 특화 교육 (약점 보강 + 난이도/진도 조율)</summary>
           <div class="acc-body">
             <p>
-              학생의 역할은 설명을 따라 문제풀이 연습을 통해 풀이 단계들을 체득하는 것입니다.
-              동일한 논리를 기반으로 한 풀이 단계라도 문제 상황에 따라 적용이 변모할 수 있고,
-              어려운 문제는 요구하는 풀이 단계를 숨기기 때문에 해결자 스스로 발견/적용해야 합니다.
+              학생이 문제를 풀지 못했을 때는, 단순히 해설을 들려주는 데서 끝내지 않고
+              <strong>놓친 테크닉을 특정</strong>해서 1번 방식대로 집중 보강합니다.
             </p>
             <p>
-              강사는 학생의 체득을 보조하는 것을 넘어, 시험 범위에서 필요한 풀이 단계의 집합을 추출해
-              학생에게 <strong>빈틈없고 효율적으로 전달</strong>해야 합니다.
-              (시험범위가 있는 수학이라면, 아이디어와 머리싸움의 영역도 유형의 형태로 끌어내릴 수 있다고 믿습니다.)
+              또한 수리논술은 대학별 입학 컷과 출제 경향에 따라 적정 난이도가 다릅니다.
+              학생 수준/목표 대학에 맞춰 문제 난이도와 진도를 조율하고,
+              아직 학습이 덜 된 소과목(미적분/기하/확통 등)이 있다면
+              해당 과목을 기다리며 <strong>이미 학습된 과목 범위에서 먼저</strong> 진행할 수도 있습니다.
             </p>
-          </div>
-        </details>
 
-        <details class="acc-item">
-          <summary class="acc-title">논술 과외 강의 포인트</summary>
-          <div class="acc-body">
-            <p>
-              커리큘럼은 단원별·테크닉(풀이 단계)별로 구성됩니다.
-              주요 대학 논술 기출을 통해 연습하고, 학생이 막힌 지점에서 어떤 풀이 단계를 따라가지 못했는지
-              사고 과정을 확인하여 보완 문제(기출/필요 시 맞춤 자작)를 제공합니다.
-            </p>
-            <p>
-              개념서 수준의 기초 개념은 기본기로서 필요 시 설명하되, 이후엔 문제풀이로 스스로 학습하게끔 합니다.
-              또한 학생의 서술을 항상 확인하여 실전 답안처럼 서술·채점·첨삭합니다.
-            </p>
+            <ul>
+              <li>학생 수준에 맞는 기출/변형/연습문제 풀(pool) 구성</li>
+              <li>미학습 단원은 보류하고, 가능한 범위에서 최대 효율로 선진행</li>
+              <li>과제량/복습 루틴/질문 방식 등도 학생 컨디션에 맞게 조절</li>
+            </ul>
           </div>
         </details>
       </div>
+
+      <p class="hint">
+        ※ 위 내용은 초안입니다. 실제 운영 방식(숙제량/첨삭 주기/모의고사 빈도 등)은 상담 후 조율합니다.
+      </p>
     </section>
 
     <section class="card" id="info">
@@ -133,11 +178,11 @@
         </div>
         <div class="info-item">
           <div class="info-k">기타 과외 가능 과목</div>
-          <div class="info-v">수학(고입/고등내신/수능) - 협의</div>
+          <div class="info-v">수학(고입/고등내신/수능) - 협의<br>대치동 수능 수학 과외 이력</div>
         </div>
         <div class="info-item">
           <div class="info-k">메시지 질의응답</div>
-          <div class="info-v">수업 시간 외 자율 질의응답 운영</div>
+          <div class="info-v">수업 시간 외 자율 질의응답 운영<br>수강생 첨삭 문의 환영</div>
         </div>
         <div class="info-item">
           <div class="info-k">문의</div>
@@ -170,132 +215,10 @@
             </tr>
           </thead>
 
-          <tbody>
-            <!-- 10:00 ~ 22:00, 30분 단위 (24행)
-                 정각 시작 행의 왼쪽(th.time-col)에 data-hour="10" 같은 속성을 달면
-                 '행과 행 사이 선' 위치(정각)에 10,11,...이 표시되도록 CSS가 처리합니다.
-            -->
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="10"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="11"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="12"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="13"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="14"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="15"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="16"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="17"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="18"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="19"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="20"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <tr>
-              <th scope="row" class="time-col hour" data-hour="21"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-            <tr>
-              <th scope="row" class="time-col"></th>
-              <td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td>
-            </tr>
-
-            <!-- 22시 라벨(마지막 경계선) -->
-            <tr class="hour-end">
-              <th scope="row" class="time-col hour end" data-hour="22"></th>
-              <td colspan="7" class="end-fill"></td>
-            </tr>
-          </tbody>
+          <!-- ✅ JS가 자동 생성 -->
+          <tbody id="schedule-body"></tbody>
         </table>
       </div>
-
-      <p class="hint">
-        표는 예시입니다. 칸에 <code>ok</code> 또는 <code>no</code> 클래스를 붙이면 색이 반영됩니다.
-      </p>
     </section>
   </main>
 
@@ -304,7 +227,105 @@
   </footer>
 
   <script>
+    // footer year
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // =========================
+    // ✅ 여기만 수정하면 됨: "가능" 시간대
+    // day 키: "일","월","화","수","목","금","토"
+    // 시간: "HH:MM" (24시간), end는 미포함 [start, end)
+    // =========================
+    const SCHEDULE_RANGES = {
+      "일": [["10:00","12:00"], ["19:00","22:00"]],
+      "월": [["14:00","18:00"]],
+      "화": [],
+      "수": [["10:00","13:30"]],
+      "목": [],
+      "금": [["20:00","22:00"]],
+      "토": [["10:00","22:00"]],
+    };
+
+    const DAYS = ["일","월","화","수","목","금","토"];
+    const START_MIN = 10 * 60;  // 10:00
+    const END_MIN   = 22 * 60;  // 22:00
+    const STEP_MIN  = 30;       // 30분
+    const SLOT_COUNT = (END_MIN - START_MIN) / STEP_MIN; // 24
+
+    function pad2(n){ return String(n).padStart(2, "0"); }
+    function minToHHMM(m){
+      const hh = Math.floor(m / 60), mm = m % 60;
+      return `${pad2(hh)}:${pad2(mm)}`;
+    }
+    function hhmmToMin(hhmm){
+      const [h, m] = hhmm.split(":").map(Number);
+      return h * 60 + m;
+    }
+    function timeToSlotIndex(hhmm){
+      return Math.round((hhmmToMin(hhmm) - START_MIN) / STEP_MIN);
+    }
+    function slotLabel(i){
+      const a = START_MIN + i * STEP_MIN;
+      const b = a + STEP_MIN;
+      return `${minToHHMM(a)}~${minToHHMM(b)}`;
+    }
+
+    // ranges -> boolean matrix
+    const ok = {};
+    for (const d of DAYS) ok[d] = Array(SLOT_COUNT).fill(false);
+
+    for (const [day, ranges] of Object.entries(SCHEDULE_RANGES)){
+      if (!ok[day]) continue;
+      for (const [s, e] of ranges){
+        const si = Math.max(0, timeToSlotIndex(s));
+        const ei = Math.min(SLOT_COUNT, timeToSlotIndex(e));
+        for (let i = si; i < ei; i++) ok[day][i] = true;
+      }
+    }
+
+    // render
+    const tbody = document.getElementById("schedule-body");
+    tbody.innerHTML = "";
+
+    for (let i = 0; i < SLOT_COUNT; i++){
+      const row = document.createElement("tr");
+
+      const minutesFromStart = START_MIN + i * STEP_MIN;
+      const minute = minutesFromStart % 60;
+      const hour = Math.floor(minutesFromStart / 60);
+
+      const th = document.createElement("th");
+      th.scope = "row";
+      th.className = "time-col" + (minute === 0 ? " hour" : "");
+      if (minute === 0) th.dataset.hour = String(hour); // 10..21
+      th.setAttribute("aria-label", slotLabel(i));
+      row.appendChild(th);
+
+      for (const d of DAYS){
+        const td = document.createElement("td");
+        td.className = ok[d][i] ? "ok" : "no";
+        td.title = `${d} ${slotLabel(i)} — ${ok[d][i] ? "가능" : "불가"}`;
+        row.appendChild(td);
+      }
+
+      tbody.appendChild(row);
+    }
+
+    // 마지막 경계선(22시) 라벨용 얇은 행
+    const endRow = document.createElement("tr");
+    endRow.className = "hour-end";
+
+    const endTh = document.createElement("th");
+    endTh.scope = "row";
+    endTh.className = "time-col hour end";
+    endTh.dataset.hour = "22";
+    endRow.appendChild(endTh);
+
+    const endTd = document.createElement("td");
+    endTd.colSpan = DAYS.length;
+    endTd.className = "end-fill";
+    endRow.appendChild(endTd);
+
+    tbody.appendChild(endRow);
   </script>
 </body>
 </html>

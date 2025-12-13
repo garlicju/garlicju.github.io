@@ -1,12 +1,9 @@
 :root{
   --text:#0b1220;
-  --muted:#334155;
   --line:rgba(15,23,42,0.14);
-  --primary:#2b6cff;
 
   --card:rgba(255,255,255,0.62);
   --card-strong:rgba(255,255,255,0.76);
-  --shadow: 0 1.125rem 3.4375rem rgba(15,23,42,0.14);
 }
 
 *{ box-sizing:border-box; }
@@ -15,11 +12,13 @@ body{
   margin:0;
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Apple SD Gothic Neo,Malgun Gothic,sans-serif;
   color:var(--text);
-  line-height:1.6;
+  line-height:1.65;
 
-  /* 위는 하늘색, 아래도 너무 어둡지 않게 + 왼쪽 위 광원 */
+  /* ✅ 전체 가독성: 기본 폰트 살짝 업 */
+  font-size:1.0625rem; /* 17px */
+
   background:
-    radial-gradient(900px 600px at 12% 10%,
+    radial-gradient(56.25rem 37.5rem at 12% 10%,
       rgba(255,255,255,0.70) 0%,
       rgba(255,255,255,0.22) 30%,
       rgba(255,255,255,0.00) 62%),
@@ -33,26 +32,26 @@ body{
 a{ color:inherit; text-decoration:none; }
 
 .container{
-  max-width:60rem; /* 960px */
+  max-width:60rem;  /* 960px */
   margin:0 auto;
-  padding:1.5rem;  /* 24px */
+  padding:1.5rem;   /* 24px */
 }
 
 .hero{
   padding:3.5rem 1.5rem 1.125rem; /* 56px 24px 18px */
 }
 
-/* ====== Top business card (minimal) ====== */
+/* ===== Top business card ===== */
 .topcard{
   position:relative;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:1.125rem; /* 18px */
+  gap:1.125rem;      /* 18px */
   flex-wrap:wrap;
 
-  padding:1.375rem;     /* 22px */
-  border-radius:1.375rem; /* 22px */
+  padding:1.375rem;  /* 22px */
+  border-radius:1.375rem;
 
   background: rgba(255,255,255,0.72);
   border:0.0625rem solid rgba(15,23,42,0.10);
@@ -74,9 +73,7 @@ a{ color:inherit; text-decoration:none; }
 .topcard::after{
   content:"";
   position:absolute;
-  left:0;
-  top:0;
-  bottom:0;
+  left:0; top:0; bottom:0;
   width:0.1875rem; /* 3px */
   background: linear-gradient(to bottom,
     rgba(43,108,255,0.55),
@@ -98,16 +95,17 @@ a{ color:inherit; text-decoration:none; }
   letter-spacing:-0.03em;
 }
 
+/* ✅ 소개/부연 텍스트 업 */
 .role{
-  margin:0.5rem 0 0; /* 8px */
+  margin:0.5rem 0 0;
   color:rgba(11,18,32,0.66);
-  font-size:0.9375rem; /* 15px */
+  font-size:1.0625rem; /* 17px */
 }
 
 .profile-meta{
-  margin:0.625rem 0 0; /* 10px */
+  margin:0.625rem 0 0;
   color:rgba(11,18,32,0.78);
-  font-size:0.875rem; /* 14px */
+  font-size:1rem; /* 16px */
 }
 
 .meta-sub{
@@ -122,6 +120,7 @@ a{ color:inherit; text-decoration:none; }
   margin-top:0.875rem; /* 14px */
 }
 
+/* ✅ 연락처 칩 글씨 업 */
 .chip{
   display:inline-flex;
   align-items:center;
@@ -133,7 +132,7 @@ a{ color:inherit; text-decoration:none; }
 
   background: rgba(255,255,255,0.62);
   color:rgba(11,18,32,0.88);
-  font-size:0.8125rem; /* 13px */
+  font-size:0.9375rem; /* 15px */
 
   transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
 }
@@ -158,11 +157,11 @@ a{ color:inherit; text-decoration:none; }
   max-width:22.5rem; /* 360px */
 }
 
-/* 사진 자리도 미니멀하게 */
+/* photo placeholder */
 .avatar{
   width:8.25rem;   /* 132px */
   height:10.5rem;  /* 168px */
-  border-radius:1.125rem; /* 18px */
+  border-radius:1.125rem;
   border:0.0625rem solid rgba(15,23,42,0.10);
   background: rgba(255,255,255,0.55);
   box-shadow: 0 0.875rem 2.25rem rgba(15,23,42,0.10);
@@ -177,21 +176,22 @@ a{ color:inherit; text-decoration:none; }
 
 .avatar-inner{
   text-align:center;
-  padding:0.625rem; /* 10px */
+  padding:0.625rem;
 }
 
+/* ✅ 사진 자리 텍스트 업 */
 .avatar-title{
   font-weight:800;
-  font-size:0.875rem; /* 14px */
+  font-size:0.9375rem; /* 15px */
 }
 
 .avatar-sub{
-  margin-top:0.25rem; /* 4px */
-  font-size:0.6875rem; /* 11px */
+  margin-top:0.25rem;
+  font-size:0.8125rem; /* 13px */
   color:rgba(11,18,32,0.55);
 }
 
-/* 나중에 실제 사진 넣을 때 */
+/* 실제 사진 넣을 때 */
 .avatar-img{
   width:8.25rem;
   height:10.5rem;
@@ -202,7 +202,7 @@ a{ color:inherit; text-decoration:none; }
   margin-left:auto;
 }
 
-/* ====== Cards ====== */
+/* ===== Cards ===== */
 .card{
   background:var(--card);
   border:0.0625rem solid var(--line);
@@ -211,25 +211,34 @@ a{ color:inherit; text-decoration:none; }
   margin:1.125rem 0;     /* 18px */
   box-shadow: 0 0.875rem 2.75rem rgba(15,23,42,0.10);
   backdrop-filter: blur(0.625rem);
+  transition: transform 140ms ease, background 140ms ease, box-shadow 140ms ease;
 }
 
+.card:hover{
+  transform: translateY(-0.0625rem);
+  background:var(--card-strong);
+  box-shadow: 0 1rem 3.25rem rgba(15,23,42,0.12);
+}
+
+/* ✅ 섹션 타이틀 업 */
 h2{
-  margin:0 0 0.75rem; /* 12px */
-  font-size:1.375rem; /* 22px */
+  margin:0 0 0.75rem;
+  font-size:1.5rem; /* 24px */
 }
 
+/* ✅ 힌트 텍스트 업 */
 .hint{
   margin:0.75rem 0 0;
-  font-size:0.75rem; /* 12px */
+  font-size:0.875rem; /* 14px */
   color:rgba(11,18,32,0.62);
 }
 
 code{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.95em;
+  font-size:0.95em;
 }
 
-/* ====== Accordion (철학) ====== */
+/* ===== Accordion ===== */
 .accordion{
   display:flex;
   flex-direction:column;
@@ -243,6 +252,7 @@ code{
   overflow:hidden;
 }
 
+/* ✅ 아코디언 제목 업 */
 .acc-title{
   list-style:none;
   cursor:pointer;
@@ -250,6 +260,7 @@ code{
   font-weight:750;
   color:rgba(11,18,32,0.88);
   position:relative;
+  font-size:1.0625rem; /* 17px */
 }
 
 .acc-title::-webkit-details-marker{ display:none; }
@@ -261,28 +272,66 @@ code{
   top:50%;
   transform: translateY(-50%);
   color:rgba(11,18,32,0.55);
-  font-size:0.9375rem;
+  font-size:1rem; /* 16px */
 }
 
-.acc-item[open] .acc-title::after{
-  content:"▴";
-}
+.acc-item[open] .acc-title::after{ content:"▴"; }
 
+/* ✅ 본문 업 */
 .acc-body{
   padding:0 0.875rem 0.9375rem;
   color:rgba(11,18,32,0.82);
+  font-size:1.0625rem; /* 17px */
+}
+
+.acc-body p{ margin:0.625rem 0 0; }
+.acc-body p:first-child{ margin-top:0.5rem; }
+
+.video-card{
+  border:0.0625rem solid var(--line);
+  border-radius:1rem;
+  background:rgba(255,255,255,0.55);
+  max-width:38rem; margin:0.5rem auto;
+  overflow:hidden;
+}
+
+.video-head{
+  padding:0.875rem;
+}
+
+.video-title{
+  font-weight:800;
+  font-size:1.0625rem;
+  color:rgba(11,18,32,0.90);
+}
+
+.video-sub{
+  margin-top:0.25rem;
   font-size:0.9375rem;
+  color:rgba(11,18,32,0.62);
 }
 
-.acc-body p{
-  margin:0.625rem 0 0;
+.video-wrap{
+  position:relative;
+  width:100%;
+  padding-top:42%; /* 16:9 */
+  background:rgba(255,255,255,0.5);
+  border-top:0.0625rem solid var(--line);
+  border-bottom:0.0625rem solid var(--line);
 }
 
-.acc-body p:first-child{
-  margin-top:0.5rem;
+.video-wrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
 }
 
-/* ====== Info grid ====== */
+.video-link{
+  padding:0.75rem 0.875rem;
+}
+
+/* ===== Info grid ===== */
 .info-grid{
   display:grid;
   gap:0.75rem; /* 12px */
@@ -292,40 +341,43 @@ code{
 .info-item{
   background:rgba(255,255,255,0.55);
   border:0.0625rem solid var(--line);
-  border-radius:1rem; /* 16px */
-  padding:0.875rem;   /* 14px */
+  border-radius:1rem;
+  padding:0.875rem;
 }
 
+/* ✅ 라벨/내용 업 */
 .info-k{
-  font-size:0.75rem; /* 12px */
+  font-size:0.875rem; /* 14px */
   letter-spacing:0.02em;
   color:rgba(11,18,32,0.60);
-  margin-bottom:0.375rem; /* 6px */
+  margin-bottom:0.375rem;
 }
 
 .info-v{
   color:rgba(11,18,32,0.86);
+  font-size:1.0625rem; /* 17px */
 }
 
-/* ====== Schedule ====== */
+/* ===== Schedule ===== */
 .card-head{
   display:flex;
   align-items:flex-start;
   justify-content:space-between;
-  gap:0.75rem; /* 12px */
+  gap:0.75rem;
   flex-wrap:wrap;
-  margin-bottom:0.625rem; /* 10px */
+  margin-bottom:0.625rem;
 }
 
 .legend{
   display:flex;
-  gap:0.5rem; /* 8px */
+  gap:0.5rem;
   flex-wrap:wrap;
 }
 
+/* ✅ 범례 업 */
 .pill{
-  font-size:0.75rem; /* 12px */
-  padding:0.375rem 0.625rem; /* 6px 10px */
+  font-size:0.875rem; /* 14px */
+  padding:0.375rem 0.625rem;
   border-radius:999rem;
   border:0.0625rem solid var(--line);
   background:rgba(255,255,255,0.55);
@@ -336,7 +388,7 @@ code{
 
 .table-wrap{
   overflow:auto;
-  border-radius:1rem; /* 16px */
+  border-radius:1rem;
   border:0.0625rem solid var(--line);
   background:rgba(255,255,255,0.45);
 }
@@ -345,16 +397,18 @@ code{
   width:100%;
   border-collapse:separate;
   border-spacing:0;
-  min-width:56rem; /* 모바일에서 가로 스크롤 여유 */
+  min-width:44rem;
+  table-layout: fixed;
 }
 
+/* ✅ 표 텍스트 업 */
 .schedule th,
 .schedule td{
-  padding:0.5rem 0.5rem; /* 셀을 조금 촘촘하게 */
+  padding:0.3rem 0.3rem;
   border-bottom:0.0625rem solid var(--line);
   border-right:0.0625rem solid var(--line);
   text-align:center;
-  font-size:0.8125rem; /* 13px */
+  font-size:0.9375rem; /* 15px */
 }
 
 .schedule thead th{
@@ -362,150 +416,20 @@ code{
   top:0;
   background:rgba(255,255,255,0.78);
   backdrop-filter: blur(0.625rem);
-  z-index:1;
+  z-index:3;
 }
 
 .schedule th.time-col{
-  width:3.75rem; /* 시간 라벨 전용(숫자만) */
-  position:sticky;
-  left:0;
-  background:rgba(255,255,255,0.78);
-  z-index:2;
-
+  width:3.75rem;
   text-align:left;
   padding-left:0.75rem;
-  position: sticky;
-}
 
-.schedule tbody th.time-col{
-  background:rgba(255,255,255,0.65);
-  backdrop-filter: blur(0.625rem);
   position:sticky;
   left:0;
-  z-index:2;
-
-  /* 경계선에 숫자를 “걸치게” 찍기 위해 */
-  position:sticky;
-}
-
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-}
-
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-}
-
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-}
-
-/* (중요) 시간 숫자를 "행과 행 사이 선" 위치에 찍기 */
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-  z-index:2;
-
-  /* pseudo-element positioning */
-  position:sticky;
-}
-
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-  z-index:2;
-  position:sticky;
-}
-
-/* 실제 hour 라벨 */
-.schedule tbody th.time-col.hour{
-  position:sticky;
-  left:0;
-  z-index:2;
-  position:sticky;
-
-  /* pseudo element anchor */
-  position:sticky;
-}
-
-.schedule tbody th.time-col.hour{
-  position:sticky;
-  left:0;
-  z-index:2;
-  position:sticky;
-
-  /* allow absolute positioning */
-  position:sticky;
-}
-
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-  z-index:2;
+  z-index:4;
   background:rgba(255,255,255,0.78);
-}
 
-/* absolute를 쓰기 위해 relative를 한번만 */
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-  z-index:2;
-}
-.schedule tbody th.time-col.hour{
-  position:sticky;
-  left:0;
-  z-index:2;
-  position:sticky;
-}
-
-/* 깔끔하게: relative는 여기서만 */
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-  z-index:2;
-}
-.schedule tbody th.time-col.hour{
-  position:sticky;
-  left:0;
-  z-index:2;
-  /* 라벨 배치 기준 */
-  position:sticky;
-}
-
-/* 브라우저별로 sticky+relative 꼬임 방지: display/table-cell 유지 */
-.schedule tbody th.time-col{
-  position:sticky;
-  left:0;
-  z-index:2;
-}
-.schedule tbody th.time-col.hour{
-  position:sticky;
-  left:0;
-  z-index:2;
-  /* 라벨을 border 라인에 걸치게 */
-  position:sticky;
-}
-
-/* 시간 라벨 표시(정각 행의 '상단 경계선' 위치) */
-.schedule tbody th.time-col.hour{
-  position:sticky;
-  left:0;
-  z-index:2;
-}
-.schedule tbody th.time-col.hour::before{
-  content: attr(data-hour);
-  position:absolute;
-  left:0.75rem;
-  top:-0.65rem;
-  font-weight:800;
-  font-size:0.75rem;
-  color:rgba(11,18,32,0.60);
-  padding:0 0.25rem;
-  background: rgba(255,255,255,0.88);
-  border-radius:0.375rem;
+  overflow:visible;
 }
 
 /* 30분 행 높이 */
@@ -518,7 +442,21 @@ code{
 .schedule td.ok{ background:rgba(34,197,94,0.16); }
 .schedule td.no{ background:rgba(148,163,184,0.22); }
 
-/* 마지막 22시 경계선 라벨용 행 */
+/* ✅ 정각 라벨 업 */
+.schedule tbody th.time-col.hour::before{
+  content: attr(data-hour);
+  position:absolute;
+  left:0.75rem;
+  top:-0.65rem;
+  font-weight:800;
+  font-size:0.875rem; /* 14px */
+  color:rgba(11,18,32,0.60);
+  padding:0 0.25rem;
+  background: rgba(255,255,255,0.88);
+  border-radius:0.375rem;
+}
+
+/* 마지막 22시 경계선 라벨용 얇은 행 */
 .schedule tr.hour-end th.time-col{
   height:0.75rem;
   border-bottom:none;
@@ -529,33 +467,34 @@ code{
   background:transparent;
 }
 
-/* 마지막 줄/오른쪽 줄 테두리 정리 */
+/* 마지막/오른쪽 테두리 정리 */
 .schedule tr:last-child td,
 .schedule tr:last-child th{ border-bottom:none; }
 
 .schedule tr td:last-child,
 .schedule tr th:last-child{ border-right:none; }
 
-/* ====== Footer ====== */
+/* ===== Footer ===== */
 .footer{
   color:rgba(11,18,32,0.65);
   padding-bottom:3rem; /* 48px */
+  font-size:0.9375rem; /* 15px */
 }
 
-/* ====== Responsive tweaks ====== */
+/* ===== Responsive ===== */
 @media (max-width:45rem){ /* 720px */
   .hero{ padding-top:2.75rem; } /* 44px */
   .name{ font-size:2.25rem; }   /* 36px */
 
-  .avatar{ width:7.25rem; height:9.25rem; } /* 116x148 */
+  .avatar{ width:7.25rem; height:9.25rem; }
   .avatar-img{ width:7.25rem; height:9.25rem; }
 
-  .chip-text{ max-width:15rem; } /* 240px */
+  .chip-text{ max-width:15rem; }
 
-  /* 모바일에서 학점 줄바꿈 허용 */
   .meta-sub{
     display:block;
     margin-left:0;
     margin-top:0.125rem;
   }
 }
+
