@@ -479,7 +479,7 @@ code{
 
 /* ===== Responsive ===== */
 @media (max-width:45rem){
-  .topcard{
+.topcard{
     flex-direction: column;
     align-items: flex-start;
   }
@@ -488,4 +488,30 @@ code{
     margin-left: 0 !important;
     align-self: flex-start;
   }
+
+  /* 표를 화면 폭에 맞춰 ‘자동 압축’ */
+  .schedule{
+    width: 100%;
+    min-width: 0;        /* 기존 min-width(예: 56rem) 무력화 */
+    table-layout: fixed; /* 남은 폭을 열에 균등 분배 */
+  }
+
+  /* 왼쪽 시간 열은 고정 */
+  .schedule th.time-col{
+    width: 3.25rem;      /* 여기 숫자만 조절하면 됨 */
+  }
+
+  /* 나머지 열은 남은 폭을 7등분 */
+  .schedule thead th:not(.time-col){
+    width: calc((100% - 3.25rem) / 7);
+  }
+
+  /* 칸이 더 좁아져도 보기 좋게 패딩 살짝 줄이기(선택) */
+  .schedule th,
+  .schedule td{
+    padding: 0.35rem;
+  }
+
+  /* 스크롤을 아예 없애고 싶으면(선택): */
+  /* .table-wrap{ overflow-x: hidden; } */
 }
