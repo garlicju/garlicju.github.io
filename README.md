@@ -3,7 +3,6 @@
 Chatgpt-generated.
 
 GitHub Pages로 운영하는 이력서입니다.
-테러하지 말아 주세요 ㅠㅠ
 
 ## 수정 방법
 - `index.html`: 본문/문구 수정
